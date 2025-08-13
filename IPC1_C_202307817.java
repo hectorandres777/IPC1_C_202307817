@@ -23,7 +23,7 @@ public class IPC1_C_202307817 {
                     System.out.println("\nHas seleccionado: Agregar Personaje");
 
                     if (totalPersonajes >= personajes.length) {
-                        System.out.println("❌ No se pueden agregar más personajes.");
+                        System.out.println("No se pueden agregar más personajes.");
                         break;
                     }
 
@@ -41,7 +41,7 @@ public class IPC1_C_202307817 {
                     }
 
                     if (existeNombre) {
-                        System.out.println("❌ El personaje ya existe.");
+                        System.out.println("El personaje ya existe.");
                         break;
                     }
 
@@ -65,11 +65,11 @@ public class IPC1_C_202307817 {
                     try {
                         nivel = Integer.parseInt(nivelStr);
                         if (nivel < 1 || nivel > 100) {
-                            System.out.println("❌ El nivel debe estar entre 1 y 100.");
+                            System.out.println("El nivel debe estar entre 1 y 100.");
                             break;
                         }
                     } catch (NumberFormatException e) {
-                        System.out.println("❌ Nivel inválido.");
+                        System.out.println("Nivel inválido.");
                         break;
                     }
 
@@ -200,7 +200,7 @@ public class IPC1_C_202307817 {
                     }
 
                     totalPersonajes--;
-                    System.out.println("✅ Personaje eliminado exitosamente.");
+                    System.out.println("Personaje eliminado exitosamente.");
                     break;
                 case 4:
                     System.out.println("\nHas seleccionado: Ver datos de personaje");
